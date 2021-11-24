@@ -9,5 +9,5 @@ class Restaurant < ApplicationRecord
 
   validates :address, presence: true
 
-  validates :category, inclusion: { in: categories }  # , message: '%<value> is not a valid category'
+  validates :category, inclusion: { in: categories }
 end
