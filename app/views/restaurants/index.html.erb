@@ -1,11 +1,11 @@
 <div class="container p-5">
   <h1>All The Restos</h1>
 
-  <ul>
+  <ul style="list-style-type: none" class="p-0">
     <% @restaurants.each do |resto| %>
-      <li><%= link_to resto.name, restaurant_path(resto) %></li>
+      <li><i class="fas fa-seedling"></i>  <%= link_to resto.name, restaurant_path(resto) %></li>
     <% end %>
   </ul>
 
-  <%= link_to 'create a new resto', new_restaurant_path %>
+  <%= link_to 'create a new resto', new_restaurant_path, class: "btn btn-primary" %>
 </div>
